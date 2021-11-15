@@ -1,0 +1,40 @@
+div[id="#wrapper"]{
+    width: 80%;
+    margin: 70px auto;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+    letter-spacing: 0.3px;
+
+}
+h1 {
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding-bottom: 15px;
+    font-size: 2.5rem !important;
+}
+#about > h3, h2 {
+    display: none;
+}
+img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform: rotate(-13deg);
+    top: 75px;
+    right: 175px;
+}
+#about > p, h3 {
+    font-style: italic;
+}
+#about > p {
+    width: 650px;
+    color: rgb(161, 161, 161);
+}
+.content {
+    display: grid;
+    grid-template-areas: 
+    "competencies skills-primary"
+    "competencies skills-secondary"
+    "experiences experience"
+    "experiences experience-1"
+    "education experience-2";
+}
