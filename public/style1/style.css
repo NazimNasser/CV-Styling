@@ -1,10 +1,11 @@
+/* Css CV style-1 */
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(199, 199, 199) 100%);
 }
-
+/* Header styling */
 header {
     background: rgb(0,40,46);
     background: linear-gradient(90deg, rgba(0,40,46,1) 0%, rgba(26,141,209,1) 60%, rgb(111, 165, 182) 100%);
@@ -30,7 +31,7 @@ img {
     -moz-box-shadow: 6px 6px 12px 5px rgba(0,0,0,0.53);
     border-radius: 5px;
 }
-
+/* Put the contact in header */
 .contacts {
     position: absolute;
     background: rgb(181,181,181);
@@ -69,7 +70,7 @@ dt {
     color:  #ffffff;
     font-weight: 600;
 }
-
+/* Main styling */
 .content {
     display: grid;
     grid-template-areas: 
@@ -114,6 +115,7 @@ h3 {
 p {
     padding-right: 20px;
 }
+/* Data skills styling */
 .skills-primary {
     margin-bottom: 20px;
 }
@@ -182,7 +184,7 @@ h4 {
 }
 
 
-
+/* Media Querying for Mobile Phones */
 
 @media only screen and (max-width: 468px) {
     header {

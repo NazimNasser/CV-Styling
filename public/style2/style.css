@@ -1,7 +1,9 @@
+/* Css CV style-2 */
 body {
     background-color: #2F3A40;
     color: white;
 }
+/* Page styling */
 div[id="#wrapper"]{
     width: 78%;
     margin: 70px auto;
@@ -10,6 +12,7 @@ div[id="#wrapper"]{
     letter-spacing: 0.3px;
 
 }
+/* Header styling */
 h1 {
     border-bottom: 1px solid #ADC641;
     padding-bottom: 15px;
@@ -38,6 +41,7 @@ figure img{
     color: #c68c41;
     margin-bottom: 90px;
 }
+/* Main styling */
 #competencies,
 #experiences,
 #education,
@@ -86,6 +90,7 @@ div.experience:first-of-type {
     grid-column: 2 / 11;
     grid-row: 2;
 }
+/* Data Skills styling */
 .skills-primary,
 .skills-secondary {
     display: flex;
@@ -145,6 +150,7 @@ div.experience:first-of-type {
     right: 0;
     color: rgb(173, 173, 173);
 }
+/* Contact styling with image */
 #contact h3, .contacts dt, .contact-skype {
     display: none;
 }
@@ -179,6 +185,11 @@ div.experience:first-of-type {
     background-image: url(../images/facebook.png);
 } */
 
+
+
+
+
+/* Media Querying for Mobile Phones */
 
 @media only screen and (max-width: 468px) {
     div[id="#wrapper"]{
