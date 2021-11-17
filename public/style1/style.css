@@ -31,7 +31,7 @@ img {
     border-radius: 5px;
 }
 
-#contact {
+.contacts {
     position: absolute;
     background: rgb(181,181,181);
     background: linear-gradient(90deg, rgba(181,181,181,1) 0%, rgba(102,102,102,1) 100%, rgba(48,48,48,1) 100%);
@@ -140,19 +140,19 @@ p {
     color: white;
 }
 div[data-skill="5"] > span {
-    width: calc(50% - 2%);
+    width: calc(80% - 2%);
 }
 div[data-skill="3"] > span {
-    width: calc(30% - 2%);
+    width: calc(80% - 2%);
 }
 div[data-skill="1"] > span {
-    width: calc(10% - 2%);
+    width: calc(20% - 2%);
 }
 div[data-skill="9"] > span {
-    width: calc(90% - 2%);
+    width: calc(50% - 2%);
 }
 div[data-skill="7"] > span {
-    width: calc(70% - 2%);
+    width: calc(20% - 2%);
 }
 .experience-date-separator {
     color: #4da6ff;
@@ -191,10 +191,9 @@ h4 {
     hgroup {
         padding-left: 30px;
     }
-    #contact {
+    .contacts {
         position: inherit;
         width: 100%;
-        background-color: white;
         box-shadow: none;
     }
     header > div{
@@ -207,7 +206,6 @@ h4 {
     }
     #contact > h3 {
         display: block;
-        background-color: white;
 
     }
     #contact > h3 {

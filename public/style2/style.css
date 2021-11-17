@@ -20,7 +20,7 @@ h1 {
 #about > h3, h2 {
     display: none;
 }
-img {
+figure img{
     position: absolute;
     width: 200px;
     transform: rotate(-13deg);
@@ -95,7 +95,7 @@ div.experience:first-of-type {
     align-items: flex-end;
 }
 .skill {
-    width: 160px;
+    width: 170px;
     height: fit-content;
     background-color: #9dbb19;
     margin: 0 5px;
@@ -110,11 +110,11 @@ div.experience:first-of-type {
     padding: 10px;
 }
 .skill[data-skill='5']::after {
-    content: '★★★';
+    content: '★★★★';
     float: right;
 }
 .skill[data-skill='3']::after {
-    content: '★★';
+    content: '★★★★';
     float: right;
 }
 .skill[data-skill='1']::after {
@@ -122,11 +122,11 @@ div.experience:first-of-type {
     float: right;
 }
 .skill[data-skill='9']::after {
-    content: '★★★★★';
+    content: '★★★';
     float: right;
 }
 .skill[data-skill='7']::after {
-    content: '★★★★';
+    content: '★';
     float: right;
 }
 .experience-institution {
@@ -145,7 +145,7 @@ div.experience:first-of-type {
     right: 0;
     color: rgb(173, 173, 173);
 }
-#contact h3, .contacts dt, .contacts dd, .contact-skype {
+#contact h3, .contacts dt, .contact-skype {
     display: none;
 }
 #contact {
@@ -164,9 +164,9 @@ div.experience:first-of-type {
     background-size: contain;
     height: 100px;
     width: 100px;
-    margin: 20px;
+    margin-right: 20px;
 }
-.contact-email{
+/* .contact-email{
     background-image: url(../images/email.png);
 }
 .contact-phone{
@@ -177,7 +177,7 @@ div.experience:first-of-type {
 }
 .contact-facebook{
     background-image: url(../images/facebook.png);
-}
+} */
 
 
 @media only screen and (max-width: 468px) {
@@ -189,7 +189,7 @@ div.experience:first-of-type {
     h1 {
         font-size: 1rem;
     }
-    img {
+    figure  > img {
         display: none;
     }
     #about > p {
@@ -233,7 +233,7 @@ div.experience:first-of-type {
 
     .contacts {
         position: static;
-        justify-content: left;
+        justify-content: flex-start;
         flex-wrap: wrap;
         width: 110%;
     }
@@ -244,6 +244,6 @@ div.experience:first-of-type {
     }
 
     .skills-secondary .skill {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
