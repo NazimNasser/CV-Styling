@@ -1,14 +1,20 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(230, 230, 230) 50%, rgb(199, 199, 199) 100%);
 }
 
 header {
-    background-color: #9a9a9a;
+    background: rgb(0,40,46);
+    background: linear-gradient(90deg, rgba(0,40,46,1) 0%, rgba(26,141,209,1) 60%, rgb(111, 165, 182) 100%);
     margin-bottom: 65px;
+    text-shadow: 5px 4px 4px rgba(0,0,0,0.7);
+    font-style: italic;
 }
 hgroup {
-    color: red;
+    color: white;
+    font-size: 18px;
 }
 
 header > div{
@@ -18,14 +24,25 @@ header > div{
     margin-left: 12%;
 
 }
+img {
+    box-shadow: 6px 6px 12px 5px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 6px 6px 12px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 6px 6px 12px 5px rgba(0,0,0,0.53);
+    border-radius: 5px;
+}
 
 #contact {
     position: absolute;
-    background-color: black;
+    background: rgb(181,181,181);
+    background: linear-gradient(90deg, rgba(181,181,181,1) 0%, rgba(102,102,102,1) 100%, rgba(48,48,48,1) 100%);
     width: 50%;
     top: 10px;
     right: 0;
+    font-weight: 800;
     line-height: 25px;
+    box-shadow: 6px 6px 12px 5px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 6px 6px 12px 5px rgba(0,0,0,0.53);
+    -moz-box-shadow: 6px 6px 12px 5px rgba(0,0,0,0.53);
 }
 
 #contact > h3 {
@@ -41,17 +58,18 @@ dt, dd {
     margin: 0;
 }
 dd > a {
-    color: red;
+    color: rgb(7 48 97);
     text-decoration: none;
 }
 dt {
-    background-color: red;
-    width: 120px;
-    color: white;
+    background: rgb(4,44,93);
+    background: linear-gradient(90deg, rgba(4,44,93,1) 0%, rgba(84,140,187,1) 48%, rgba(153,153,153,1) 100%);
+    width: 130px;
+    border-right: 1px solid black;
+    color:  #ffffff;
+    font-weight: 600;
 }
-dd {
-    background-color: black;
-}
+
 .content {
     display: grid;
     grid-template-areas: 
@@ -85,11 +103,13 @@ h3::before{
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background-color: red;
+    background: rgb(0,40,46);
+    background: linear-gradient(90deg, rgb(17, 133, 151) 0%, rgb(12, 70, 104) 60%, rgb(19, 100, 138) 100%);
  }
 h3 {
     border-bottom: 1px solid rgb(192, 192, 192);
     padding-bottom: 10px;
+    text-shadow: 5px 4px 4px rgba(80, 80, 80, 0.7);
  }
 p {
     padding-right: 20px;
@@ -107,13 +127,14 @@ p {
     opacity: 0.7;
 }
 .skill {
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(180, 179, 179);
     width: 100%;
     margin: 3px;
     padding: 5px;
 }
 .skill > span {
-    background-color: red;
+    background: rgb(0,40,46);
+    background: linear-gradient(90deg, rgba(0,40,46,1) 0%, rgba(26,141,209,1) 60%, rgb(111, 165, 182) 100%);
     display: inherit;
     padding: 5px;
     color: white;
@@ -134,7 +155,7 @@ div[data-skill="7"] > span {
     width: calc(70% - 2%);
 }
 .experience-date-separator {
-    color: red;
+    color: #4da6ff;
 }
 .experience-details {
     color: rgb(148, 148, 148);
@@ -143,11 +164,14 @@ div[data-skill="7"] > span {
 .experience-details::before {
     content: "In";
 }
+.experience-location::after {
+    content: "on";
+}
 .experience-type {
-    color: red;
+    color: #2969a8;
 }
 .experience-institution {
-    color: red;
+    color: #3370ac;
     font-weight: 300;
 }
 .experience-institution::before {
@@ -171,6 +195,7 @@ h4 {
         position: inherit;
         width: 100%;
         background-color: white;
+        box-shadow: none;
     }
     header > div{
         display: initial;
@@ -183,12 +208,13 @@ h4 {
     #contact > h3 {
         display: block;
         background-color: white;
+
+    }
+    #contact > h3 {
+        margin-bottom: 0;
     }
     h3 {
         padding-top: 15px;
-    }
-    dd {
-        background-color: white;
     }
     p {
         padding-right: 0;
